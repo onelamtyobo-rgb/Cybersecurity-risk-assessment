@@ -1,6 +1,10 @@
 package com.securestart;
 
 import com.securestart.model.BusinessProfile;
+import com.securestart.core.PolicyGenerator;
+import com.securestart.core.RiskAssessor;
+import com.securestart.utils.FileExporter;
+
 import java.util.Scanner;
 
 public class Main {
@@ -23,15 +27,20 @@ public class Main {
         // 3. Create the Business Profile Model
         BusinessProfile profile = new BusinessProfile(businessName, industry);
 
-        // 4. Confirmation Output
-        System.out.println("\n✅ Profile created successfully!");
-        System.out.println("Business: " + profile.getBusinessName());
-        System.out.println("Industry: " + profile.getIndustry());
+        RiskAssessor assessor = new RiskAssessor(scanner);
+        assessor.performAssessment(profile);
 
-        System.out.println("\n--- End of Day 1 Setup ---");
-        System.out.println("(Risk assessment logic will be connected in the next step.)");
+        PolicyGenerator generator = new PolicyGenerator();
+        String finalReport = generator.generatePolicy(profile);
 
-        // Clean up resources
+        System.out.println("\n" + finalReport);
+
+        String safeFilename = businessName.replaceAll("[^a-zA-Z0-9]", "_") + "_Security_Report.txt";
+        FileExporter.saveReport(safeFilename, finalReport);
+
+
         scanner.close();
+        System.out.println("\nThank you for using SecureStart. Goodbye!");
+
     }
 }

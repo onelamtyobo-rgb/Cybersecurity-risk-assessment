@@ -1,0 +1,32 @@
+=================================================================
+       CYBERSECURITY POLICY & RECOMMENDATIONS REPORT
+=================================================================
+Prepared for: Khusela Tech
+Industry: Cybersecurity
+Overall Risk Level: Medium Risk
+Risk Score: 60/100
+=================================================================
+
+EXECUTIVE SUMMARY:
+There are some gaps that need attention.
+
+IDENTIFIED WEAKNESSES & ACTIONABLE POLICIES:
+-----------------------------------------------------------------
+[!] Issue: No reliable backups
+    Policy Action: Implement immediate controls to address this gap.
+    - Assign an owner to resolve this within 14 days.
+    - Review progress in the next monthly security meeting.
+
+[!] Issue: Unsecured network
+    Policy Action: Implement immediate controls to address this gap.
+    - Assign an owner to resolve this within 14 days.
+    - Review progress in the next monthly security meeting.
+
+[!] Issue: No security training
+    Policy Action: Implement immediate controls to address this gap.
+    - Assign an owner to resolve this within 14 days.
+    - Review progress in the next monthly security meeting.
+
+=================================================================
+End of Report. Stay Secure!
+=================================================================

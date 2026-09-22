@@ -1,3 +1,6 @@
+com\securestart\core\PolicyGenerator.class
+com\securestart\core\RiskAssessor.class
 com\securestart\Main.class
 com\securestart\model\BusinessProfile.class
 com\securestart\model\RiskScore.class
+com\securestart\utils\FileExporter.class
